@@ -1,0 +1,100 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo do corpo */
+body {
+    font-family: 'Roboto', sans-serif; /* Fonte moderna e limpa */
+    background-color: #f0f0f0; /* Fundo neutro suave */
+    padding: 40px;
+}
+
+/* Título principal */
+h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    color: #4B0082; /* Um roxo profundo */
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos de nível 2 */
+h2 {
+    margin-top: 30px;
+    font-size: 2.5rem;
+    color: #4B0082; /* O mesmo roxo profundo */
+    border-bottom: 2px solid #d1d1d1; /* Linha abaixo do título */
+    padding-bottom: 10px;
+}
+
+/* Títulos de nível 3 */
+h3 {
+    margin-top: 20px;
+    font-size: 2rem;
+    color: #4B0082; /* Consistente com os outros títulos */
+}
+
+/* Container de FAQ */
+.faq-container {
+    max-width: 800px;
+    margin: auto;
+    background: #ffffff; /* Fundo branco para o conteúdo */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Sombra mais suave */
+    padding: 30px;
+    transition: transform 0.3s; /* Transição para efeito ao passar o mouse */
+}
+
+/* Efeito ao passar o mouse sobre o container */
+.faq-container:hover {
+    transform: scale(1.02); /* Leve aumento para um efeito de profundidade */
+}
+
+/* Estilo dos itens da FAQ */
+.faq-item {
+    margin: 15px 0;
+    border-bottom: 1px solid #e0e0e0; /* Separador suave */
+}
+
+/* Último item sem borda */
+.faq-item:last-child {
+    border-bottom: none;
+}
+
+/* Estilo da pergunta */
+.faq-question {
+    cursor: pointer;
+    padding: 20px;
+    background: linear-gradient(135deg, #d9d6f7 30%, #eae9fe 90%); /* Gradiente suave */
+    border-radius: 10px;
+    transition: background 0.3s, transform 0.3s;
+    color: #333; /* Cor escura para contraste */
+    font-weight: bold; /* Negrito para perguntas */
+}
+
+/* Efeito ao passar o mouse sobre a pergunta */
+.faq-question:hover {
+    background: #d1cde0; /* Um lilás mais escuro ao passar o mouse */
+    transform: translateY(-2px); /* Levanta a pergunta ao passar o mouse */
+}
+
+/* Estilo da resposta */
+.faq-answer {
+    display: none;
+    padding: 15px;
+    background: #f9f9f9; /* Fundo claro para as respostas */
+    border-radius: 10px;
+    color: #4B0082; /* Texto em roxo para as respostas */
+}
+
+/* Transições suaves */
+.faq-answer p {
+    transition: color 0.3s;
+}
+
+.faq-answer p:hover {
+    color: #333; /* Muda a cor do texto da resposta ao passar o mouse */
+}
